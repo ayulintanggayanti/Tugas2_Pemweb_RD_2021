@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="descriptions" content="Formulir Pendaftaran Pemilihan Muli Mekhanai Lampung">
+        <meta name="author" content="119140095-Ayu Lintang Gayanti">
+        <link rel="stylesheet" href="assets/data_formulir_peserta.css">
+        <title>Pemilihan Muli Mekhanai Lampung</title>
+             
+    <body>
+        <div class="container">
+            <div class="opening">
+                <h1>Pemilihan Muli Mekhanai Lampung 2021</h1>
+                <p>Formulir Pendaftaran Peserta Muli Mekhanai Lampung</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Data Peserta</h3>
+                </div>
+                <div class="card-body">
+                    <form class="form-peserta" method="GET" action="data_formulir_peserta.html">
+                        <div class="formContent">
+                            <label for="nama">Nama</label>
+                            <div class="inputan">
+                                <input type="text" name="nama" id="nama" class="form-control" placeholder="Nama Lengkap">
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <label for="jenisKelamin">Jenis Kelamin</label>
+                            <div class="input-radio">
+                                <div><input type="radio" name="jenisKelamin" id="jenisKelamin" value="Perempuan"> Perempuan</div>
+                                <div><input type="radio" name="jenisKelamin" id="jenisKelamin" value="Laki-laki"> Laki-laki</div>                                                      
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <label for="usia">Usia</label>
+                            <div class="inputan">
+                                <input type="number" name="usia" id="usia" class="form-control" placeholder="Usia">
+                            </div>
+                        </div> 
+                        <div class="formContent">
+                            <label for="alamat">Alamat Domisili</label>
+                            <div class="inputan">
+                                <textarea class="form-control" name="alamat" id="alamat" placeholder="Alamat Domisili"></textarea>
+                            </div>
+                        </div>
+                        <div class="formContent">
+                            <label for="email">Email</label>
+                            <div class="inputan">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div> 
+                        <div class="formContent">
+                            <label for="pekerjaan">Pekerjaan</label>
+                            <div class="inputan">
+                                <input type="text" name="pekerjaan" id="pekerjaan" class="form-control" placeholder="Pekerjaan">
+                            </div>
+                        </div> 
+                        <div class="button">
+                            <button type="submit" class="btn-submit">  <a href="data_informasi_peserta.html">Submit </a></button>
+                        </div>                      
+                    </form>
+                </div>
+            </div>
+        </div>        
+    </body>
+</html>
