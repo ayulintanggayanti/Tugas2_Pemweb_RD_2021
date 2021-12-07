@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="descriptions" content="Form Pendaftaran Pemilihan Muli Mekhanai Lampung">
+        <meta name="author" content="119140095-Ayu Lintang">
+        <link rel="stylesheet" href="assets/data_informasi_peserta.css">
+        <title>Pemilihan Muli Mekhanai Lampung</title>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const nama = params.get('nama');
+            const jenisKelamin = params.get('jenisKelamin');
+            const usia = params.get('usia')
+            const alamatDomisili = params.get('alamatDomisili')
+            const email = params.get('email');
+            const pekerjaan = params.get('pekerjaan')
+            window.onload = function() {
+                document.getElementById("nama").value = nama;
+                document.getElementById("jenisKelamin").value = jenisKelamin;
+                document.getElementById("usia").value = usia;
+                document.getElementById("alamatDomisili").value = alamatDomisili;
+                document.getElementById("email").value = email;
+                document.getElementById("pekerjaan").value = pekerjaan;
+            };
+        </script>
+    </head>
+    <body>        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Data Peserta</h3>
+            </div>
+            <div class="card-body">
+                <form class="form-peserta">
+                    <div class="formContent">
+                        <label for="nama">Nama</label>
+                        <div class="inputan">
+                            <input type="text" name="nama" id="nama" class="form-control" value="nama">
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="jenisKelamin">Jenis Kelamin</label>
+                        <div class="inputan">
+                            <input type="text" id="jenisKelamin" class="form-control" value="jenisKelamin">                     
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="usia">Usia</label>
+                        <div class="inputan">
+                            <input type="number" id="usia" class="form-control" value="usia">                     
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="alamatDomisili">Alamat Domisili</label>
+                        <div class="inputan">
+                            <textarea class="form-control" name="Alamat Domisili" id="alamatDomisili" value="alamat"></textarea>
+                        </div>
+                    </div>
+                    <div class="formContent">
+                        <label for="email">Email</label>
+                        <div class="inputan">
+                            <input type="email" name="email" id="email" class="form-control" value="email">
+                        </div>
+                    </div> 
+                    <div class="formContent">
+                        <label for="pekerjaan">Pekerjaan</label>
+                        <div class="inputan">
+                            <input type="text" name="pekerjaan" id="pekerjaan" class="form-control" value="pekerjaan">
+                        </div>
+                    </div> 
+                    <div class="reminder">
+                        <p>Apakah datamu sudah valid?</p>
+                        <p>Apabila terdapat kesalahan dalam mengisi formulir, harap kembali ke halaman pengisian formulir pendaftaran</p>
+                    </div>
+                </form>
+            </div>
+            <div class="btn">
+                <div class="back-btn">
+                    <a href="data_formulir_peserta.html">
+                        Back
+                    </a>
+                </div>
+                <div class="done-btn">
+                    <a href="Registrasi.html">
+                        Done
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
